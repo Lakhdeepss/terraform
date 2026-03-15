@@ -1,6 +1,8 @@
 provider "aws" {
   region = "ap-southeast-2"
 }
+
+
 resource "aws_key_pair" "terraform-key" {
   key_name   = "terraform-key"
   public_key = file("C:\\Users\\DELL\\.ssh\\id_rsa.pub")
